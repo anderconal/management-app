@@ -16,11 +16,12 @@
     vm.calendarTitle = '';
     vm.isCellOpen = false;
 
+    // Constructor like function
     activate();
 
     function activate() {
       vm.type = 'Gregorian';
-      vm.calendarView = 'month';
+      vm.calendarView = 'week';
       vm.viewDate = new Date();
       vm.actions = [{
           label: '<i class=\'glyphicon glyphicon-pencil\'></i>',
