@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
@@ -305,3 +306,6 @@ For more information on AngularJS please check out http://angularjs.org/
 [protractor]: https://github.com/angular/protractor
 [selenium]: http://docs.seleniumhq.org/
 [travis]: https://travis-ci.org/
+=======
+# management-app
+>>>>>>> 1819dd3a00660021d067366d5f0ff7c06f71d905
