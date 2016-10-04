@@ -1,4 +1,7 @@
-/* app css stylesheet */
+/* Remove right margin */
+.row {
+  margin-right: 0;
+}
 
 .menu {
   list-style: none;
