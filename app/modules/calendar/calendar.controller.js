@@ -4,11 +4,10 @@
   .controller('calendarController', calendarController);
 
   /* @ngInject */
-  function calendarController(Events, calendarConfig) {
+  function calendarController(Events, calendarConfig, modalService) {
     var vm = this;
 
     // Declaration of variables
-    vm.type = '';
     vm.calendarView = '';
     vm.viewDate = {};
     vm.actions = [];
@@ -20,7 +19,6 @@
     activate();
 
     function activate() {
-      vm.type = 'Gregorian';
       vm.calendarView = 'week';
       vm.viewDate = new Date();
       vm.actions = [{
@@ -49,7 +47,8 @@
         };
 
       vm.eventClicked = function(event) {
-        alert('Clicked', event);
+        // alert('Clicked', event);
+        modalService.openDialog(event);
       };
 
       vm.eventEdited = function(event) {
