@@ -11,7 +11,6 @@ angular.module('myApp', [
   'ngAnimate',
   'ngAria',
   'ngMessages',
-  'ngMaterial',
   'index',
   'calendar',
   'events',

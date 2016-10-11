@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('calendar')
+  angular.module('mwl.calendar')
   .constant('calendarConfig', {
     allDateFormats: {
       angular: {
@@ -76,4 +76,5 @@
         secondary: '#caffca'
       }
     }
+  });
 })();

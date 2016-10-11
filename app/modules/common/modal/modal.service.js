@@ -5,7 +5,7 @@
   .service('modalService', modalService);
 
   /* @ngInject */
-  function modalService($mdDialog) {
+  function modalService() {
     var openDialog = openDialog;
 
     var service = {
@@ -13,7 +13,7 @@
     };
 
     function openDialog() {
-      alert("openDialog function");
+      alert('openDialog function');
     }
 
     return service;

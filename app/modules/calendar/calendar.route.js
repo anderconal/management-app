@@ -10,7 +10,7 @@
       templateUrl: 'modules/calendar/calendar.template.html',
       controller: 'calendarController',
       controllerAs: 'calendarCtrl'
-    }
+    };
 
     $stateProvider.state(calendar);
   });

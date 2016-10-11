@@ -65,7 +65,9 @@
     view-title="calendarCtrl.calendarTitle"
     view-date="calendarCtrl.viewDate"
     on-event-click="calendarCtrl.eventClicked(calendarEvent)"
-    on-event-times-changed="calendarCtrl.eventTimesChanged(calendarEvent); calendarEvent.startsAt = calendarNewEventStart; calendarEvent.endsAt = calendarNewEventEnd"
+    on-event-times-changed="calendarCtrl.eventTimesChanged(calendarEvent);
+                            calendarEvent.startsAt = calendarNewEventStart;
+                            calendarEvent.endsAt = calendarNewEventEnd"
     cell-is-open="calendarCtrl.isCellOpen"
     day-view-start="10:00"
     day-view-end="20:00"

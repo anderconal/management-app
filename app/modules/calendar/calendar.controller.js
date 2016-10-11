@@ -36,7 +36,7 @@
       vm.isCellOpen = true;
       vm.calendarTitle = 'Lydia\'s calendar';
       vm.addEvent = function() {
-      vm.events.push({
+          vm.events.push({
             title: 'New event',
             startsAt: moment().startOf('day').toDate(),
             endsAt: moment().endOf('day').toDate(),
@@ -47,7 +47,6 @@
         };
 
       vm.eventClicked = function(event) {
-        // alert('Clicked', event);
         modalService.openDialog(event);
       };
 

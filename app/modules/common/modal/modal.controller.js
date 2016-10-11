@@ -5,7 +5,7 @@
   .controller('modalController', modalController);
 
   /* @ngInject */
-  function modalController($mdDialog) {
+  function modalController() {
     var vm = this;
   }
 })();

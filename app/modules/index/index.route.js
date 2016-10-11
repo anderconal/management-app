@@ -10,7 +10,7 @@
       templateUrl: 'modules/index/index.template.html',
       controller: 'indexController',
       controllerAs: 'indexCtrl'
-    }
+    };
 
     $stateProvider.state(index);
   });
