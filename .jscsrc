@@ -1,0 +1,7 @@
+{
+  "preset": "google",
+  "validateIndentation": 2,
+  "requireCamelCaseOrUpperCaseIdentifiers": null,
+  "requireCurlyBraces": null,
+  "excludeFiles": []
+}
