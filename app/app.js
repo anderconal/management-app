@@ -9,9 +9,13 @@ angular.module('myApp', [
   'mwl.calendar',
   'ngTouch',
   'ngAnimate',
+  'ngAria',
+  'ngMessages',
+  'ngMaterial',
   'index',
   'calendar',
-  'events'
+  'events',
+  'modal'
 ]).
 /* @ngInject */
 config(function($urlRouterProvider, $touchProvider) {
