@@ -7,7 +7,7 @@
   function Events() {
     var service = {
         getEvents: getEvents
-    };
+      };
 
     var getEvents = getEvents;
 
