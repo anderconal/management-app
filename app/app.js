@@ -13,8 +13,7 @@ angular.module('myApp', [
   'ngMessages',
   'index',
   'calendar',
-  'events',
-  'modal'
+  'events'
 ]).
 /* @ngInject */
 config(function($urlRouterProvider, $touchProvider) {
