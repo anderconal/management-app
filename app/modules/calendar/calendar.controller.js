@@ -4,7 +4,7 @@
   .controller('calendarController', calendarController);
 
   /* @ngInject */
-  function calendarController(Events, calendarConfig, modalService) {
+  function calendarController(Events, calendarConfig) {
     var vm = this;
 
     // Declaration of variables
@@ -47,7 +47,7 @@
         };
 
       vm.eventClicked = function(event) {
-        modalService.openDialog(event);
+        alert('Clicked', event);
       };
 
       vm.eventEdited = function(event) {

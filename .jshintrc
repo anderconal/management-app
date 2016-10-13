@@ -2,14 +2,10 @@
   "undef": true,
   "unused": true,
   "validthis": true,
-  "predef": [
-    "angular",
-    "require",
-    "exports",
-    "process",
-    "Buffer",
-    "console",
-    "$",
-    "module"
-  ]
+  "strict": false,
+  "globals": {
+    "angular": false,
+    "moment": false
+  },
+  "devel": true
 }
