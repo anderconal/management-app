@@ -14,9 +14,10 @@
     function getEvents() {
       var events = [
         {
-          title: 'Ander Conal', // The title of the event
-          startsAt: new Date(2016, 9, 11, 19, 30), // A javascript date object for when the event starts
-          endsAt: new Date(2016, 9, 11, 20), // Optional - a javascript date object for when the event ends
+          title: 'Ander Conal', // The title of the event,
+          description: 'Depilación pecho y axilas',
+          startsAt: new Date(2016, 9, 18, 19, 30), // A javascript date object for when the event starts
+          endsAt: new Date(2016, 9, 18, 20), // Optional - a javascript date object for when the event ends
           color: { // can also be calendarConfig.colorTypes.warning for shortcuts to the deprecated event types
             primary: '#e3bc08', // the primary event color (should be darker than secondary)
             secondary: '#fdf1ba' // the secondary event color (should be lighter than primary)
@@ -36,9 +37,10 @@
           allDay: false // set to true to display the event as an all day event on the day view
         },
         {
-          title: 'Robert Zamorano', // The title of the event
-          startsAt: new Date(2016, 9, 13, 10), // A javascript date object for when the event starts
-          endsAt: new Date(2016, 9, 13, 11, 30), // Optional - a javascript date object for when the event ends
+          title: 'Robert Zamorano', // The title of the event,
+          description: 'Depilación pecho y espalda',
+          startsAt: new Date(2016, 9, 20, 10), // A javascript date object for when the event starts
+          endsAt: new Date(2016, 9, 20, 11, 30), // Optional - a javascript date object for when the event ends
           color: { // can also be calendarConfig.colorTypes.warning for shortcuts to the deprecated event types
             primary: '#ff00ff', // the primary event color (should be darker than secondary)
             secondary: '#ffbfff' // the secondary event color (should be lighter than primary)
