@@ -12,8 +12,9 @@ angular.module('myApp', [
   'ngAria',
   'ngMessages',
   'index',
+  'eventModal',
   'calendar',
-  'events'
+  'events',
 ]).
 /* @ngInject */
 config(function($urlRouterProvider, $touchProvider) {

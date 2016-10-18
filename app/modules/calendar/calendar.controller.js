@@ -4,7 +4,7 @@
   .controller('calendarController', calendarController);
 
   /* @ngInject */
-  function calendarController(Events, calendarConfig) {
+  function calendarController(Events, calendarConfig, $uibModal) {
     var vm = this;
 
     // Declaration of variables
@@ -35,38 +35,51 @@
       vm.events = Events.getEvents();
       vm.isCellOpen = true;
       vm.calendarTitle = 'Lydia\'s calendar';
-      vm.addEvent = function() {
-          vm.events.push({
-            title: 'New event',
-            startsAt: moment().startOf('day').toDate(),
-            endsAt: moment().endOf('day').toDate(),
-            color: calendarConfig.colorTypes.important,
-            draggable: true,
-            resizable: true
-          });
-        };
+    } // End of the activate function
 
-      vm.eventClicked = function(event) {
-        alert('Clicked', event);
+    // Functions
+    vm.addEvent = function() {
+        vm.events.push({
+          title: 'New event',
+          startsAt: moment().startOf('day').toDate(),
+          endsAt: moment().endOf('day').toDate(),
+          color: calendarConfig.colorTypes.important,
+          draggable: true,
+          resizable: true
+        });
       };
 
-      vm.eventEdited = function(event) {
-        alert('Edited', event);
-      };
+    vm.eventClicked = function(event) {
+      var modalInstance = $uibModal.open({
+        animation: true,
+        controller: 'eventModalController',
+        controllerAs: 'emCtrl',
+        templateUrl: '/modules/calendar/event-modal/' +
+                     'event-modal.template.html',
+        resolve: {
+          currentEvent: function() {
+            return event;
+          }
+        }
+      });
+    };
 
-      vm.eventDeleted = function(event) {
-        alert('Deleted', event);
-      };
+    vm.eventEdited = function(event) {
+      alert('Edited', event);
+    };
 
-      vm.eventTimesChanged = function(event) {
-        alert('Dropped or resized', event);
-      };
+    vm.eventDeleted = function(event) {
+      alert('Deleted', event);
+    };
 
-      vm.toggle = function($event, field, event) {
-        $event.preventDefault();
-        $event.stopPropagation();
-        event[field] = !event[field];
-      };
-    }
+    vm.eventTimesChanged = function(event) {
+      alert('Dropped or resized', event);
+    };
+
+    vm.toggle = function($event, field, event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+      event[field] = !event[field];
+    };
   }
 })();
