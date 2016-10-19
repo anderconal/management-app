@@ -14,7 +14,7 @@ gulp.task('serve', ['browserSync', 'sass', 'watcher']);
 /* Create a task which will be watching every change of every file inside my
 app */
 gulp.task('watcher', ['browserSync', 'sass'], function() {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/styles/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/**/*.js', browserSync.reload);
 });
@@ -31,9 +31,9 @@ gulp.task('browserSync', function() {
 
 // Create a task which will compile Sass into CSS
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/styles/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('app/styles'))
     .pipe(browserSync.reload({
       stream: true
     }));
