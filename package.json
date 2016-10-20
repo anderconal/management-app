@@ -6,9 +6,13 @@
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.5.1",
     "bower": "^1.7.7",
     "browser-sync": "^2.17.5",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.7",
     "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7",
     "http-server": "^0.9.0",
@@ -18,6 +22,9 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "karma-junit-reporter": "^0.4.1",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2",
+    "precss": "^1.4.0",
     "protractor": "^3.2.2"
   },
   "scripts": {
